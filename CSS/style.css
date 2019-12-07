@@ -1,0 +1,909 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Farver:
+Lys grå: #E8E6E1
+Mørk grå: #AFA3A2
+Lys grøn: #C0C1AD
+Mørk grøn: #575E4D
+Gul: #ECC53A
+*/ 
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, p {
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: montserrat;
+}
+
+p, a, h4 {
+    font-family: lato;
+}
+
+/* ------------------------------------------------ Menusystem ------------------------------------------------ */
+
+.logo {
+    max-height: 8vh;
+    float: left;
+    margin: 12px 0 0 12px;
+}
+
+.nav {
+    background-color: #fff;
+    opacity: .7;
+    height: 78px;
+    line-height: 70px;
+    z-index: 3;
+}
+
+.menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    background-color: #fff;
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    color: #000;
+    
+}
+
+.menu2 {
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    text-align: right;
+    display: flex;
+    float: right;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 60%;
+    max-height: 10vh;
+}
+
+.menu2 a:hover {
+    color: #feb914;
+}
+
+.menu a:hover {
+    color: #feb914;
+}
+
+.toggle {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: inline-block;
+}
+
+/* ------------------------------------------- Header ---------------------------------------------- */
+
+.header {
+    background-image: url(../Billeder/womanwmobile.jpg);
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+    height: 120%;
+    width: 100%;
+}
+
+.header_box {
+    background-color: #fdfdfd;
+    opacity: 0.9;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 4rem 3rem;
+    
+}
+
+.header_heading {
+    font-family: flood std;
+    font-size: 3rem;
+}
+
+.header_box_part {
+    display: block;
+}
+
+/* --------------------------------------------- Test section ------------------------------------------ */
+
+.test {
+    background-color: #E8E6E1;
+    height: 130%;
+    position: relative;
+    top: -11rem;
+    z-index: -2;
+}
+
+.test_box {
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    text-align: center;
+}
+
+.test_heading {
+    font-size: 3rem;
+    animation: moveInLeft 1s linear;
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.test_box_part {
+    display: block;
+}
+
+.button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    background-color: #575E4D;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.test_billede {
+    height: 85%;
+    position: absolute;
+    top: 25%;
+    left: 48%;
+}
+
+/* --------------------------------------------- Rundvisning section ------------------------------------------------ */
+
+.rundvisning {
+    position: relative;
+    top: -11rem;
+}
+
+.rundvisning_box {
+    background-color: #C0C1AD;
+    height: 130%;
+    -webkit-clip-path: polygon(0% 16%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0% 16%, 100% 0, 100% 100%, 0 100%);
+}
+
+.rundvisning_heading_box {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+}
+
+.rundvisning_heading_box2 {
+    display: none;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    text-align: center;
+}
+
+.rundvisning_heading {
+    font-size: 3rem;
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    
+}
+
+.rundvisning_box_part {
+    display: block;
+    
+}
+
+.rundvisning_billede {
+    height: 85%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+/* ---------------------------------------------- Kompas section -------------------------------------------- */
+
+.kompas {
+    position: relative;
+    top: -11rem;
+}
+
+.kompas_box {
+    background-color: #E8E6E1;
+    height: 130%;
+    -webkit-clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0 100%);
+    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0 100%);
+}
+
+.kompas_heading_box {
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    text-align: center;
+}
+
+.kompas_heading {
+    font-size: 3rem;
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.kompas_box_part {
+    display: block;
+    text-align: center;
+}
+
+.kompas_billede {
+    height: 85%;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+}
+
+/* ------------------------------------------------- Citat sektion ---------------------------------------------------- */
+
+.citat {
+    height: 40%;
+    width: 100%;
+    background-color: #AFA3A2;
+    position: relative;
+    top: -7rem;
+}
+
+.citat_box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    width: 90%;
+    color: #fff;
+}
+
+.citat_p_part1 {
+    font-size: 4rem;
+    font-family: flood std;
+}
+
+.citat_p_part2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+
+/* ----------------------------------------------------- Instagram sektion ---------------------------------------------------- */
+
+.instagram {
+    position: relative;
+    top: -7rem;
+}
+
+.instagram_heading {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.instagram_box {
+    
+}
+
+/* ------------------------------------------------------- Aarhus sektion ----------------------------------------------------- */
+
+.aarhus {
+    background-image: url(../Billeder/aarhusskyline.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.aarhus_box {
+    position: absolute;
+    top: 5%;
+    left: 13%;
+    text-align: center;
+}
+
+.aarhus_heading {
+
+}
+
+.aarhus_box_part {
+    font-size: 4rem;
+    font-family: flood std;
+    color: #ecc53a;
+}
+
+/* ----------------------------------------------------------- Footer ----------------------------------------------------------- */
+
+.footer {
+    height: 50%;
+    background-color: #C0C1AD;
+}
+
+.footer_indhold {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 4rem;
+    color: #575e4d;   
+}
+
+.footer_logo {
+    width: 60%;
+    transform: translateX(40%);
+    margin-top: 15%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footer_kontakt {
+    transform: translateX(25%);
+}
+
+.footer_h {
+    width: 6rem;
+    position: relative;
+    font-size: 1.1rem;
+
+}
+
+.footer_h:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : -50%;
+    height  : 1px;
+    width   : 150%;
+    border-bottom: 2px solid #575E4D;
+}
+
+.footer_p {
+    margin-top: 1rem;
+}
+
+.footer_so-me_p {
+    font-size: 1rem;
+    line-height: 2.4rem;
+}
+
+.footer_link {
+    transform: translateX(25%);
+}
+
+.footer_so-me {
+    transform: translateX(25%);
+}
+
+.awesome {
+    display: flex;
+    margin-top: 1rem;
+    color: #575E4D;
+}
+
+.footer_dato {
+    margin: 2rem;
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+.footer_p2 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: flood std;
+    color: #fff;
+}
+
+/* -------------------------------------------------------- Udd-Kompas ----------------------------------------------------------- */
+
+.header-kompas {
+    background-image: url(../Billeder/lost.jpg);
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+    height: 120%;
+    width: 100%;
+}
+
+.uddannelses_kompasset {
+    background-color: #C0C1AD;
+    height: 150%;
+    position: relative;
+    top: -11rem;
+    z-index: -2;
+    
+}
+
+.uddannelses_kompasset_billede {
+    position: absolute;
+    width: 80%;
+    top: 15%;
+    left: 50%;
+    justify-content: center;
+    transform: translateX(-50%);
+
+}
+
+/* ------------------------------------------------------- Multimediedesign ----------------------------------------------------- */
+
+
+
+.multimediedesign {
+    background-color: #C0C1AD;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+.multimediedesign_h {
+    font-family: montserrat;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 5%;
+}
+
+.multimediedesign_p {
+    font-family: lato;
+    text-align: center;
+    padding: 5% 15%;
+    font-size: 1.5rem;
+    height: 50px;
+}
+
+.multimediedesign_p2 {
+    font-family: flood std;
+    text-align: center;
+    font-size: 1.5rem;
+    color: yellow;
+    height: 100px;
+}
+.multimediedesign_p3 {
+    font-family: flood std;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    height: 100px;
+}
+.multimediedesign_mulighed {
+    font-family: flood std;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    height: 100px;
+    margin-top: 10%;
+}
+
+
+.multimediedesign_opgave {
+    position: relative;
+    background-color: #E8E6E1;
+    height: 80%;
+    width: 100%;
+}
+
+.multimediedesign_beskriv {
+    padding-top: 20%;
+    font-family: lato;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.computerbillede {
+ position: absolute;
+ top: 70%;
+ left: 5%;
+ z-index: 20;
+
+}
+
+.multimediedesign_muligheder {
+background-image: url(../Billeder/multimediekarriere.jpg);
+background-size: cover;
+height: 100%;
+width: 100%;
+position: relative;
+
+}
+
+.karrieren123 {
+    width: 50%;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+}
+
+.multimediedesign_moverskrift {
+    font-family: montserrat;
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+    height: 100px;
+    width: 100%;
+}
+
+.multimediedesign_m2 {
+    font-family: lato;
+    font-size: 1.2rem;
+    color: black;
+    text-align: justify;
+}
+
+.multimediedesign_opgaven {
+    font-family: flood std;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    height: 100px;
+    margin-top: 5%;
+}
+
+
+@media screen and (max-width: 400px) {
+    .computerbillede {
+        width: 50%;
+        left: 25%;
+        overflow-x: hidden;
+    }
+    
+    .multimediedesign {
+        text-align: center;
+        width: 100%; 
+    }
+
+    .youtube {
+        width: 100%;
+    }
+
+    .multimediedesign_moverskrift {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .karrieren123 {
+        background-color: white;
+        opacity: 0.9;
+        width: 100%;
+        left: 0%;
+    }
+.multimediedesign_h {
+    font-size: 1.8rem;
+}
+.multimediedesign_p {
+    font-size: 1rem;
+}
+
+
+.multimediedesign_beskriv {
+    position: relative;
+    top: 15%;
+    font-size: 1rem;
+}
+    
+.multimediedesign_mulighed {
+    font-size: 1rem;
+    margin-top: 15%;
+}
+
+.multimediedesign_opgave {
+
+}
+
+.multimediedesign_opgaven {
+  margin-top: 35%;
+    font-size: 1rem;
+}
+.multimediedesign_p3 {
+    margin-top: 7%;
+    font-size: 1rem;
+}
+.multimediedesign_p2 {
+    margin-top: 15%;
+    font-size: 1rem;
+}
+}
+
+
+/* ------------------------------------------------------- Mapbox ----------------------------------------------------- */
+
+.mapbox1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    top: 100%;
+}
+
+.footer_multimedeidesign {
+    height: 50%;
+    background-color: #C0C1AD;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .menu2 {
+        display: none;
+    }
+
+    .menu {
+        width: 30%;
+        position: absolute;
+        right: 0;
+        margin-top: 78px;
+        font-size: 2vw;
+    }
+
+    .toggle {
+        display: block;
+        margin: 0 1rem 0 0;
+        font-size: 26px;
+        line-height: 70px;
+        cursor: pointer;
+        width: 26px;
+        float: right;
+        color: #000;
+    }
+
+    .logo {
+        margin: 18px 0 0 18px;
+    }
+
+    .header {
+        background-position: center;
+    }
+
+    .header_box {
+        top: 70%;
+        left: 40%;
+        padding: 3rem 2.3rem;
+        
+    }
+    
+    .header_heading {
+        font-size: 1.8rem;
+    }
+
+    .test_box {
+        top: 40%;
+    }
+
+    .test_heading {
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+
+    .rundvisning_heading_box {
+        top: 20%;
+    }
+
+    .rundvisning_billede {
+        left: 4%;
+    }
+
+    .rundvisning_heading {
+        font-size: 2rem;
+    }
+
+    .kompas_heading {
+        font-size: 2rem;
+    }
+
+    .citat_p_part1 {
+        font-size: 2rem;
+    }
+
+    .citat_p_part2 {
+        font-size: 1.5rem;
+    }
+
+    .aarhus {
+        height: 70%;
+    }
+
+    .aarhus_box_part {
+        font-size: 3rem;
+    }
+
+    .footer {
+        height: 110%;
+    }
+
+    .footer_indhold {
+        padding-top: 0;
+        grid-template-rows: auto;
+    }
+
+    .footer_logo {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        width: 40%;
+        transform: translateX(80%);
+    }
+
+    .footer_kontakt {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .footer_link {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .footer_so-me {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .footer_dato {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        padding-left: 2.2rem;
+    }
+
+    .header-kompas {
+        background-position: center;
+    }
+
+    .uddannelses_kompasset {
+        height: 140%;
+    }
+
+    .uddannelses_kompasset_billede {
+        width: 100%;
+        top: 15%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .menu {
+        width: 100%;
+        z-index: 30;
+        font-size: 4vw;
+    }
+
+    .header_box {
+        width: 100%;
+        top: 78%;
+        left: 50%;
+        padding: 3rem 2.3rem;
+        
+    }
+
+    .test_box {
+        left: 8%;
+    }
+    
+    .test_heading {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+
+    .test_billede {
+        left: 40%;
+    }
+
+    .rundvisning_billede {
+        height: 95%;
+    }
+
+    .rundvisning_heading {
+        font-size: 1.5rem;
+    }
+
+    .rundvisning_heading_box {
+        display: none;
+    }
+
+    .rundvisning_heading_box2 {
+        display: block;
+        background-color: #fff;
+        opacity: .9;
+        height: 20%;
+        width: 100%;
+        left: 0;
+    }
+
+    .kompas_heading_box {
+        left: 8%;
+    }
+    
+    .kompas_heading {
+        font-size: 1.5rem;
+    }
+
+    .aarhus {
+        height: 45%;
+    }
+
+    .aarhus_box_part {
+        font-size: 1.8rem;
+    }
+
+    .footer {
+        height: 170%;
+    }
+
+    .footer_logo {
+        width: 60%;
+        transform: translateX(35%);
+    }
+
+    .footer_kontakt {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        transform: translateX(30%);
+    }
+
+    .footer_link {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        transform: translateX(30%);
+    }
+
+    .footer_so-me {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        transform: translateX(30%);
+    }
+
+    .footer_dato {
+        grid-row-start: 6;
+        grid-row-end: 7;
+        padding-left: 0;
+    }
+
+    .uddannelses_kompasset {
+        height: 85%;
+    }
+
+    .uddannelses_kompasset_billede {
+        width: 120%;
+        top: 25%;
+    }
+
+}
